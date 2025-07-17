@@ -1,5 +1,5 @@
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 
 body {
@@ -8,9 +8,6 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
-}
-
-header {
 }
 
 .navbar {
@@ -52,7 +49,7 @@ header {
   position: sticky;
   background-color: rgb(169, 92, 241);
   width: 200px;
-  height: 87%;
+  height: 85.7%;
   padding-top: 100px;
   flex-shrink: 0;
   top: 60px;
@@ -60,13 +57,17 @@ header {
 
 .mainbar {
   background-color: rgb(246, 148, 148);
-  flex-grow: 1;
+  flex-grow: 3;
   display: flex;
   flex-direction: column;
   /* height: 100%; */
   padding-top: 80px;
   flex-basis: 80%;
   overflow: auto;
+}
+
+.mainbar p {
+  padding: 20px;
 }
 
 .photo {
@@ -91,8 +92,26 @@ header {
 }
 
 .footerbar {
-  background-color: rgb(165, 228, 102);
-  height: 200px;
+  background-color: rgb(97, 95, 95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.footerlogo img {
+  width: 200px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialmedia img {
+  width: 30px;
+  aspect-ratio: 5/5;
+  margin: 0 3px;
 }
 
 label {
@@ -130,5 +149,9 @@ label {
     display: block;
     padding: 20px;
   }
-}
 
+  .footerbar {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
